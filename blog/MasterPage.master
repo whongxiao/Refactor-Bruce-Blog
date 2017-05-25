@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="control/roll.ascx" TagName="roll" TagPrefix="uc8" %>
+<%@ Register Src="control/count.ascx" TagName="count" TagPrefix="uc7" %>
+<%@ Register Src="control/comment.ascx" TagName="comment" TagPrefix="uc6" %>
+<%@ Register Src="control/recent.ascx" TagName="recent" TagPrefix="uc5" %>
+
+<%@ Register Src="control/category.ascx" TagName="category" TagPrefix="uc3" %>
+<%@ Register Src="control/calendar.ascx" TagName="calendar" TagPrefix="uc2" %>
+<%@ Register Src="control/search.ascx" TagName="search" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=StringHandling.String.login%></title>  <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="keywords" content=<%= StringHandling.String.keyword%>/>
+    <meta name="description" content=<%= StringHandling.String.miaoshu %> />
+</head>
+<body>
+    <div id="wrapper">
+ 
+     <div id="header">
+            <h2><%=StringHandling.String.login%></h2>
+            <h1><a href=""><%= StringHandling.String.miaoshu %></a></h1>            
+        </div>
+  
+        <ul class="menu">
+            <li><a href="">index</a></li>
+
+        </ul> 
+
+      
+        <form id="Form1" runat="Server" class="body">
+                                    
+            <div id="content">
+           
+
+                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                <br />
+                <br />
+                <p style="font-size: 11px; text-align: center">
+                    Powered by <a href="http://stulife.qyun.net/"><span >
+                        Bruce blog.NET</span></a> ver:1.0. |  <a href="http://stulife.qyun.net/"><span
+                            >© Copyright 2009</span></a>.<a href="http://www.51aspx.com/CV/BruceBlog" target="_blank" title="Asp.net源码下载专业站">download</a>
+
+                </p>
+            </div>
+    
+       
+            <div id="sidepanel">      
+            
+              
+
+  <DIV id=widgetzone>
+     <DIV class="widget textbox" id=widgetd0cfd535-71ec-4414-96fd-8663cbe26f97>
+    <H4>Search</H4>
+    <uc1:search ID="Search1" runat="server" /></div>
+       <uc2:calendar ID="Calendar1" runat="server" />
+   <DIV class="widget categorylist" id=widget687f3c95-be16-45a5-8e93-e365a3835e65>
+ 
+<H4>Category list</H4>
+    <uc3:category ID="Category1" runat="server" /></div>
+
+    
+    
+    
+<DIV class="widget recentposts" id=widgete8d76724-3e75-4902-b100-e5a81dc2d8de>
+<H4>Recent posts</H4>
+  <uc5:recent ID="Recent1" runat="server" />
+</DIV>
+<DIV class="widget recentcomments" 
+id=widget2692b128-2ad1-422e-bc12-b684718931bd>
+  
+<H4>Recent comments</H4>
+
+   <uc6:comment ID="Comment1" runat="server" />
+
+</DIV>
+<DIV class="widget textbox" id=widgetf4490ad0-f602-45a8-90c0-f76a579af721>
+ 
+<H4>
+    Count</H4>
+    <uc7:count ID="Count1" runat="server" />
+
+
+</DIV>
+<DIV class="widget blogroll" id=widget276d544c-503f-4e7f-b4ac-29b372ad1143>
+<H4>Blog roll</H4>
+    <uc8:roll ID="Roll1" runat="server" />
+
+
+</DIV>
+</DIV>
+              
+              
+            </div>    
+        </form>
+     </div> 
+</body>
+</html>

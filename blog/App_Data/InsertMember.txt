@@ -1,0 +1,2 @@
+insert into b_member(M_Name,M_Password,M_Email,M_staus,M_Type) values('jingwei','EB-90-BF-2D-E8-1B-31-A9-89-2C-33-A7-C7-16-AD-30','gnk@163.com',1,'0')
+insert into b_member(M_Name,M_Password,M_Email,M_staus) values('51aspx','06-5D-D1-FD-A8-E7-74-BB-3F-29-3C-67-C3-DF-C8-26','support@51aspx.com',0)

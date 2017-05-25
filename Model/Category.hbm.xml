@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.Category,Model" table="b_category">
+    <id name="C_ID" column="C_ID" type="String">
+      <generator class="assigned"/>
+    </id>
+    <property name="C_Name" column="C_Name" type="String"/>
+    <property name="C_Order" column="C_Order" type="String"/>
+    <property name="C_Intro" column="C_Intro" type="String"/>
+    <property name="C_Url" column="C_Url" type="String"/>
+    <property name="C_Time" column="C_Time" type="DateTime"/>
+  </class>
+</hibernate-mapping>

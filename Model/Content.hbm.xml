@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="Model.Content,Model" table="b_content">
+    <id name="L_ID" column="L_ID" type="String">
+      <generator class="assigned"/>
+    </id>
+	<many-to-one name="L_CID" column="L_CID"
+				class="Model.Category,Model"
+				not-null="true"/>
+    <!--<property name="L_CID" type="Int64"/>-->
+    <property name="L_CTitle" type="String"/>
+    <property name="L_Title" type="String"/>
+    <property name="L_Intro" type="String"/>
+    <property name="L_Author" type="String"/>
+    <property name="L_From" type="String"/>
+    <property name="L_Content" type="String"/>
+    <property name="L_PostTime" type="DateTime"/>
+    <property name="L_ViewNums" type="Int32"/>
+    <property name="L_IsShow" type="Int32"/>
+    <property name="L_IsTop" type="Int32"/>
+    <property name="L_comorder" type="String"/>
+    <property name="L_tag" type="String"/>
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Model.Comment,Model" table="b_comment" >
+    <id name="C_ID" column="C_ID"  type="String">
+      <generator class="assigned"/>
+    </id>
+	<many-to-one name="B_ID" column="B_ID"
+				class="Model.Content,Model"
+				not-null="true"/>
+    <!--<property name="B_ID" type="String"/>-->
+    <property name="B_Title" type="String"/>
+    <property name="M_ID" type="String"/>
+    <property name="C_Content" type="String"/>
+    <property name="C_Author" type="String"/>
+    <property name="C_PostTime" type="DateTime"/>
+    <property name="C_PostIP" type="String"/>
+  </class>
+</hibernate-mapping>

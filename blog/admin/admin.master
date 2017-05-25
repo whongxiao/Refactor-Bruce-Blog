@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title><%=StringHandling.String.login%>--后台管理</title>
+    <LINK href="Site.css" type=text/css rel=stylesheet />
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+<DIV id=header>
+<H1 class=blogtitle><A><%=StringHandling.String.login%></A> </H1>
+<P class=desc><%= StringHandling.String.miaoshu %></P></DIV>
+<DIV id=ddnav>
+<DIV id=nav>
+<UL class=nav>
+  <LI><A href="config.aspx">管理首页</A> </LI></UL>
+  
+  
+  <UL class=nav>
+  <LI><A href="admincategory.aspx">分类管理</A> </LI></UL>
+  <UL class=nav>
+  <LI><A href="adminblog.aspx">文章管理</A> </LI></UL>
+  <UL class=nav>
+  <LI><A href="admincomment.aspx">评论管理</A> </LI></UL>
+  <UL class=nav>
+  <LI><A href="adminlink.aspx">连接管理</A> </LI></UL>
+   <UL class=nav>
+  <LI><A href="adminmember.aspx">用户管理</A> </LI></UL>
+<UL class=nav>
+  <LI><A href="">About</A> </LI></UL></DIV></DIV>
+<DIV id=top></DIV>
+<DIV id=main>
+<DIV id=content>
+<DIV class=entry>
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    
+</DIV>
+
+</DIV>
+
+
+</DIV>
+<DIV id=footer></DIV>
+<DIV id=footerbox>
+<DIV class=footer><A href="stulife.qyun.net/">bruce</A>  © Copyright 2009</DIV></DIV>
+    </form>
+</body>
+</html>

@@ -3,6 +3,8 @@
 利用书中描述的三层结构方式，对原程序进行了重构，感谢原作者stulife贡献了源代码。 
 　　为了帮助更多的NHibernate研究者，我们也决定将重构的代码进行开源，开源使用了Apache License。 项目详情请参看 http://qvancang.com/blog/opensource/refactorbruceblog
 
+注： 下载本项目后， 请为Blog web 项目添加引用 FredCK.FCKeditorV2.dll， 此文件在NHibernateDLL project的DLL目录下
+
 作者：Allen
 
 BruceBlog程序源码(采用NHibernate)
